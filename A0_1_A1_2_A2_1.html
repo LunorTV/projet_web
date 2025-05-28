@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Lukas Dos Santos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #23272f 0%, #7f9cf5 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-success {
+            background: #23272f;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            padding: 2.5rem 2rem;
+            max-width: 400px;
+            width: 90vw;
+            color: #e0e0e0;
+            text-align: center;
+            animation: popIn 0.5s;
+        }
+        .contact-success h2 {
+            color: #38d39f;
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+        }
+        .contact-success .contact-info {
+            margin-top: 1.5rem;
+            font-size: 1.15rem;
+        }
+        .contact-success i {
+            color: #7f9cf5;
+            margin-right: 0.5em;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .back-btn {
+            margin-top: 2rem;
+            background: #7f9cf5;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #38d39f;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="contact-success">
+        <h2>Bravo, accès direct !</h2>
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:lukasds1706@gmail.com" style="color:#7f9cf5;text-decoration:none;">lukasds1706@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:0772085383" style="color:#7f9cf5;text-decoration:none;">07 72 08 53 83</a>
+            </p>
+        </div>
+        <button class="back-btn" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+        </button>
+    </div>
+</body>
+</html>
